@@ -1,0 +1,637 @@
+@font-face {
+  font-family: 'muller';
+  src: url(/fonts/Muller\ Regular.ttf);
+}
+
+@font-face {
+  font-family: 'clash';
+  src: url(/fonts/ClashDisplay-Variable.ttf);
+  font-weight: 300;
+}
+
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+*,
+
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+:root {
+  --primary: #ec994b;
+  --white: #ffffff;
+  --bg: #f5f5f5;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+  width: 100%;
+}
+
+@media (min-width: 1440px) {
+  html {
+    zoom: 1.5;
+  }
+}
+
+@media (min-width: 2560px) {
+  html {
+    zoom: 1.7;
+  }
+}
+
+@media (min-width: 3860px) {
+  html {
+    zoom: 2.5;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 1.3rem;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background: #797979;
+  transition: all 0.5s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #222224;
+}
+
+::-webkit-scrollbar-track {
+  background: #f9f9f9;
+}
+
+body {
+  font-size: 1.6rem;
+  background: rgb(26, 26, 26);  
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: rgb(26, 26, 26);
+    display: flex;
+    font-family: 'muller';
+    padding: 10px 20px;
+    z-index: 100;
+    height: 7vh;
+    margin-top: 0.5vh;
+  
+
+}
+
+
+.navbar a {
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+    margin: 0 10px  ;
+    font-weight: bold;
+    margin-top: 1vh;
+}
+
+
+.tranding-slide-content-bottom a {
+  color: white;
+}
+
+.navbar .logo img {
+  width: 5vh;
+  border-radius: 30px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+
+}
+
+.options {
+    display: flex;
+    font-size: 1rem;
+    margin-top: 1vh;
+      
+}
+
+.ccc-title {
+  color: white;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-family: 'clash';
+
+}
+
+.container {
+  max-width: 124rem;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section-heading {
+  font-size: 3rem;
+  color: var(--primary);
+  padding: 2rem 0;
+}
+
+#tranding {
+ margin-top: -2.7vh;
+}
+
+@media (max-width:1440px) {
+  #tranding {
+    padding: 7rem 0;
+  }
+}
+
+#tranding .tranding-slider {
+  height: 52rem;
+  padding: 2rem 0;
+  position: relative;
+}
+
+@media (max-width:500px) {
+  #tranding .tranding-slider {
+    height: 45rem;
+  }
+}
+
+.tranding-slide {
+  width: 37rem;
+  height: 42rem;
+  position: relative;
+}
+
+@media (max-width:500px) {
+  .tranding-slide {
+    width: 28rem !important;
+    height: 36rem !important;
+  }
+  .tranding-slide .tranding-slide-img img {
+    width: 28rem !important;
+    height: 36rem !important;
+  
+  }
+}
+
+.tranding-slide .tranding-slide-img img {
+  width: 37rem;
+  height: 42rem;
+  border-radius: 2rem;
+  object-fit: cover;
+  opacity: 0.9;
+}
+
+.tranding-slide .tranding-slide-content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.tranding-slide-content .food-price {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  color: var(--white);
+}
+
+.tranding-slide-content .tranding-slide-content-bottom {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  color: var(--white);
+}
+
+.food-rating {
+  padding-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+
+/* to add color to the stars  */
+
+ion-icon {
+  color: var(--primary);
+}
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  display: none;
+}
+
+.tranding-slider-control {
+  position: relative;
+  bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tranding-slider-control .swiper-button-next {
+  left: 58% !important;
+  transform: translateX(-58%) !important;
+}
+
+@media (max-width:990px) {
+  .tranding-slider-control .swiper-button-next {
+    left: 70% !important;
+    transform: translateX(-70%) !important;
+  }
+}
+
+@media (max-width:450px) {
+  .tranding-slider-control .swiper-button-next {
+    left: 80% !important;
+    transform: translateX(-80%) !important;
+  }
+}
+
+@media (max-width:990px) {
+  .tranding-slider-control .swiper-button-prev {
+    left: 30% !important;
+    transform: translateX(-30%) !important;
+  }
+}
+
+@media (max-width:450px) {
+  .tranding-slider-control .swiper-button-prev {
+    left: 20% !important;
+    transform: translateX(-20%) !important;
+  }
+}
+
+.tranding-slider-control .slider-arrow {
+  background: var(--white);
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  left: 42%;
+  transform: translateX(-42%);
+  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+}
+
+.tranding-slider-control .slider-arrow ion-icon {
+  font-size: 2rem;
+  color: #222224;
+}
+
+.tranding-slider-control .slider-arrow::after {
+  content: '';
+}
+
+.tranding-slider-control .swiper-pagination {
+  position: relative;
+  width: 15rem;
+  bottom: 1rem;
+}
+
+.tranding-slider-control .swiper-pagination .swiper-pagination-bullet {
+  filter: drop-shadow(0px 8px 24px rgba(238, 243, 255, 0.1));
+}
+
+.tranding-slider-control .swiper-pagination .swiper-pagination-bullet-active {
+  background: var(--primary);
+}
+
+
+.about-container {
+  display: flex;
+  width: 100%;
+  color: white;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+  background-color: rgba(255, 0, 0, 0.527);
+  height: 20vh;
+
+}
+
+.about-text {
+  font-size: 1.2rem;
+  width: 75%;
+  align-items: center;
+  align-content: center;
+}
+
+.grid .col img {
+  width: 100%;
+  display: flex;
+  border-radius: 0px;
+}
+
+.grid-container {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+}
+
+.grid {
+  display: grid;
+  padding: 10px;
+  margin-top: 3vh;
+  gap: 20px;
+  width: 80%;
+
+
+  
+
+  @media (min-width:786px) {
+    grid-template-columns: repeat(3,1fr);   
+  }
+  
+  @media (min-width:600px) and (max-width:786px){
+    grid-template-columns: repeat(2,1fr);   
+  }
+  
+  
+  @media (min-width:400px) and (max-width:600px){
+    grid-template-columns: repeat(1,1fr);   
+  }
+
+}
+
+
+
+.col{
+  background-color:none ;
+  margin-bottom: 5px; 
+  padding: 10px;
+  width: 35vh;
+  border: 1px solid white;
+
+ 
+}
+
+.grid .col p {
+  font-size: 1rem;
+  color: white;
+  margin-top: 1vh;
+  font-family: 'muller';
+  text-align: center;
+}
+
+.grid .col h3 {
+  color: white;
+  margin-top: 1vh;
+  font-size: 1.3rem;
+}
+
+.col-heading {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.col-heading h4 {
+  color: white;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  margin-top: 0.5vh;
+}
+
+
+/* Default styles for larger screens */
+/* Default styles for larger screens */
+/* Default styles for larger screens */
+.details-image {
+  display: flex;
+  margin-top: 0px;
+  margin-left: 12.5vh;
+  height: 50vh;
+  flex-direction: row;
+  gap: 20px;
+  align-items: center; /* Add this to vertically center the content */
+}
+
+.details-image img {
+  width: 30%;
+  display: block;
+}
+
+.details-text {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.details-text h2 {
+  color: white;
+  font-family: 'clash';
+  letter-spacing: 1px;
+}
+
+.details-text h4 {
+  color: white;
+  font-family: 'clash';
+  letter-spacing: 0.5px;
+  font-size: 1.2rem;
+}
+
+/* Media Query for 800px viewport width */
+@media screen and (max-width: 800px) {
+  .details-image {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .details-image img {
+    width: 60%;
+  }
+
+  .details-text {
+    width: 100%;
+  }
+
+  .essay-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    text-align: center;
+    margin-left: 0; /* Remove margin on the left side */
+  }
+}
+
+/* Media Query for 600px viewport width */
+@media screen and (max-width: 600px) {
+  .details-image img {
+    width: 60%;
+  }
+}
+
+/* Default styles for larger screens */
+.essay-text {
+  display: flex;
+  margin-left: 12.5vh;
+  flex-direction: column;
+  color: white;
+  font-family: 'clash';
+  margin-top: 2vh;
+  width: 80%;
+  font-size: 1.2rem;
+}
+
+
+
+
+/* .article-text {
+  display: flex;
+  margin-top: 5vh;
+  color: white ;
+  width: 80%;
+  flex-direction: column;
+  
+}
+
+.article-text h3  {
+
+  font-family: 'clash';
+
+}
+
+.article-text h2 {
+
+  font-family : 'clash';
+}
+ */
+
+
+  /* Code for unsolved mysteries starts here  */
+
+ .grid-box {
+  display: grid;
+  padding: 10px;
+  margin-top: 3vh;
+  gap: 10px;
+  width: 80%;
+  margin-left: 6vw;
+
+ }
+
+ .col2 {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid white;
+  align-self: self-start;
+  justify-items: center;
+
+
+ }
+
+ .grid-box .col2 img {
+  width: 30%;
+ }
+
+ .grid-box .col2 h4 {
+  color: white;
+  font-family: 'clash';
+  margin-left: 1vw;
+ }
+
+ .grid-box .col2 p {
+  margin-top: 1vw;
+  color: white;
+  font-family: 'clash';
+  font-size: 1.3rem;
+  margin-left: 1vw;
+
+ }
+
+ .grid-box .col2 h3 {
+  margin-left: 1vw;
+  margin-top: 2vw;
+  display: flex;
+  gap: 5px;
+ }
+
+ .grid-box .col2 button {
+  margin-left: 1vw;
+  margin-top: 1vw;
+  display: flex;
+ }
+
+ /* code for unsolved mysteries ends here */
+
+ /* gallery gallery */
+
+ .gallery{
+  padding: 10px;
+  
+  display: grid;
+  grid-gap: 10px;
+
+
+  @media (min-width:786px) {
+      grid-template-columns: repeat(3,1fr);   
+      
+  }
+
+  @media (min-width:600px) and (max-width:786px){
+      grid-template-columns: repeat(2,1fr);
+      .col p {
+          text-align: justify;
+          font-family: 'Barlow';
+          font-size: 20px;
+      }   
+  }
+
+
+  @media (min-width:400px) and (max-width:600px){
+      grid-template-columns: repeat(1,1fr);
+      
+      .col p {
+          text-align: justify;
+          font-family: 'Barlow';
+          font-size: 20px;
+      }
+  }
+
+ }
+
+ .sk-heading {
+  color: white;
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+  font-family: 'clash';
+  font-size: 3rem;
+ }
+
+ .usm-heading {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 5vh;
+  color: white;
+  font-family: 'clash';
+}
+
+.usm-heading > div {
+  flex-grow: 5; /* Allow the inner div to take up the available space */
+}
+
+
+
